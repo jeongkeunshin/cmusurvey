@@ -15,6 +15,11 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use(express.json());
+
+app.get('/warning', (req, res) => {
+    res.sendFile(__dirname + '/views/warning.html')
+});
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html')
 });
@@ -23,22 +28,28 @@ app.get('/:uniquecode', (req, res) => {
 	const uniqueCode = req.params.uniquecode;
 	fs.appendFile('log.txt', uniqueCode + '\n', (err) => {
 		if (err) throw err;
-		console.log('Logged: ${uniqueCode}');
+    if(uniqueCode != "warning") {
+      console.log(`Logged: ${uniqueCode}`);
+    }
 	});
 	res.sendFile(__dirname + '/views/index.html')
 })
+
+
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
 app.post('/login', (req, res) => {
-  const { uniqueCode, id } = req.body;
+
+  const { uniqueCode } = req.body;
   // Log the unique code and ID to login.txt
-  fs.appendFile('login.txt', `${uniqueCode},${id}\n`, (err) => {
+  fs.appendFile('login.txt', `${uniqueCode}\n`, (err) => {
     if (err) throw err;
-    console.log(`Logged: ${uniqueCode},${id}`);
+    console.log(`Submitted: ${uniqueCode}`);
   });
   // Send a success response back to the client
   res.status(200).send('Login successful');
 });
+

@@ -9,10 +9,11 @@
    <link href="/css/ie.css" rel="stylesheet" type="text/css" />
    <link href="/css/iphone.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+   <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
+
 
 <div id="wrapper">
  <div id="pageHeader">
@@ -47,7 +48,7 @@
         </div>
 
         <div class="formrow">
-           <input class="loginbutton" id="loginbutton" type="submit" name="_eventId_proceed" value="Login" size="15" tabindex="3" style="text-align: left;" />
+           <input class="loginbutton" id = "loginbutton" type="submit" name="_eventId_proceed" value="Login" size="15" tabindex="3" style="text-align: left;" />
         </div>
        </div>
        <div id="lockwrapper">
@@ -69,30 +70,32 @@
  </div>
  <div class="clear"></div>
 </div>
-<script type="text/javascript" language="javascript">
+<script>
   document.addEventListener('DOMContentLoaded', function() {
   var loginButton = document.getElementById('loginbutton');
-  var usernameInput = document.getElementById('username');
-
   loginButton.addEventListener('click', function() {
-    var uniqueCode = window.location.pathname.split('/').pop(); // Extract unique code from the URL
-    var id = usernameInput.value; // Get the entered ID
-    console.log(uniqueCode)
-    console.log(id)
-    // Send the unique code and ID to the server using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/login', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        // Handle the response from the server if needed
-        console.log(xhr.responseText);
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('passwordinput').value;
+      if (username.trim() === '' || password.trim() === '') {
+          event.preventDefault(); // Prevent the form from submitting
+      } else {
+        var uniqueCode = window.location.pathname.split('/').pop(); // Extract unique code from the URL
+        console.log(uniqueCode)
+        // Send the unique code and ID to the server using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/login', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            // Handle the response from the server if needed
+            console.log(xhr.responseText);
+            window.location.href = "/warning";
+          }
+        };
+        xhr.send(JSON.stringify({ uniqueCode: uniqueCode }));
       }
-    };
-    xhr.send(JSON.stringify({ uniqueCode: uniqueCode, id: id }));
   });
 });
 </script>
-
 </body>
 </html>
