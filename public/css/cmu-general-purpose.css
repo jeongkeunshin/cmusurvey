@@ -1,0 +1,310 @@
+/* Carnegie Mellon University General Purpose CSS Template */
+
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: normal;
+text-decoration: none;
+background-color: #ffffff;
+margin: 0px;
+padding: 0px;
+}
+
+img {
+border:0px;
+padding:0px;
+margin:0px;
+}
+
+b,strong {
+font-weight: bold;
+}
+
+i,em {
+font-style: italic;
+}
+
+sup {
+font-size: 0.8em;
+vertical-align: top;
+margin-right: 0.125em;
+}
+
+sub {
+font-size: 0.8em;
+vertical-align: bottom;
+margin-right: 0.125em;
+}
+
+form {margin: 0px;}
+
+p {
+padding: 0px;
+margin: 0px;
+}
+
+hr,div.hr {
+height: 14px;
+background-image:url(/images/horizontal_rule.gif);
+background-repeat:repeat-x;
+border: none;
+}
+
+blockquote {
+font-style:italic;
+margin:0;
+padding:1em;
+}
+
+ul {
+margin:0;
+}
+
+#wrapper {
+position:absolute;
+top:0px;
+left:0px;
+width:100%;
+}
+
+#wordmark {
+width:243px;
+background-color:#990000;
+height: 35px;
+}
+
+#wordmark h2 {
+margin:0px;
+padding:0px;
+background-image:url(/img/wordmark.gif);
+background-size: contain;
+background-repeat:no-repeat;
+background-position:left top;
+}
+
+#wordmark h2 a {
+display:block;
+width:244px;
+height:35px;
+text-indent: -9999px;
+}
+
+#wordmark h2 a span {
+height: 1px;
+width: 1px; 
+position:absolute;
+overflow:hidden;
+top:-10px;
+}
+
+#pageHeader {
+height:35px;
+background-color: #990000;
+}
+
+.content {
+color:#424545;
+font-size:14px;
+line-height:1.4;
+margin:0;
+overflow:hidden;
+padding:7px 10px;
+}
+
+.content a {
+color: #d17702;
+text-decoration: underline;
+font-weight: normal;
+}
+
+.content a:hover, .content a:visited {
+color: #936241;
+text-decoration: underline;
+font-weight: normal;
+}
+
+.content ol
+{
+list-style-type:decimal;
+list-style-position:outside;
+margin: 4px 0px 9px 0px; 
+padding-left: 25px;
+}
+
+.content ul
+{
+list-style-type: disc;
+list-style-image: none;
+list-style-position: outside;
+margin: 4px 0px 9px 0px;
+padding-left: 25px;
+}
+
+.content li
+{
+padding: 0px 0px 1px 0px;
+margin-top: 1px;
+}
+
+.content p
+{
+padding-bottom: 8px;
+}
+
+.content h1 {
+font-family: Helvetica, sans-serif;
+font-size: 18px;
+font-weight: normal;
+color: #990000;
+line-height: 1.2;
+margin: 9px 0px 8px 0px;
+padding: 0px;
+}
+
+.content h2 {
+font-family: Helvetica, sans-serif;
+font-size: 15px;
+font-weight: normal;
+color: #990000;
+margin: 10px 0px 8px 0px;
+padding: 0px;
+}
+
+.content h3 {
+font-family: Helvetica, sans-serif;
+font-size: 13px;
+font-weight: normal;
+color: #990000;
+margin: 10px 0px 8px 0px;
+padding: 0px;
+}
+
+.content h4 {
+font-family: Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #424545;
+margin: 10px 0px 8px 0px;
+padding: 0px;
+}
+
+.content img {
+padding: 2px;
+}
+
+.content hr,.content div.hr {
+margin: 10px 0px 10px 0px;
+}
+
+.content input {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#424545;
+}
+
+.content input.radio {width:auto;}
+
+.content input.checkbox {width:auto;}
+
+.content textarea {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#424545;
+}
+
+.content select {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#424545;
+}
+
+.content select.option {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#424545;
+}
+
+.content2Column table {
+width: 673px;
+}
+
+.content3Column table {
+width: 430px;
+}
+
+.content table {
+border-collapse:collapse; 
+border-style: hidden; 
+margin: auto;
+background-color: transparent;
+}
+
+.content  tr {}
+
+.content tbody td {
+font-size:12px; 
+text-decoration:none; 
+font-weight:normal; 
+border: 1px solid #d4d4d4; 
+border-style: hidden; 
+padding: 5px 3px 11px 5px;  
+margin: 0px; 
+}
+
+.content thead td, .content thead th {
+font-size:11px;
+text-decoration:none; 
+font-weight:bold; 
+border-style: hidden; 
+padding:4px 4px 9px 5px; 
+margin-top: 5px; 
+text-transform:uppercase; 
+vertical-align: bottom; 
+text-align: left;
+}
+
+.content table p {padding:0px 0px 5px 0px !important;margin:0px !important;}
+
+.noDisplay {display:none;}
+
+div.hr hr {
+display:none;
+}
+
+.right {
+text-align: right;
+}
+
+.floatleft {float: left; margin: 0px 10px 10px 0; padding: 4px !important; background-color:#FFFFFF;}
+.floatright {float: right; margin: 0px 0 10px 10px; padding: 4px !important; background-color:#FFFFFF;}
+
+#footer{
+clear:both;
+color:#626262;
+font-size:10px;
+padding:7px 10px;
+vertical-align:bottom;
+}
+
+#footer a, #footer a:visited{color:#626262; text-decoration:underline; font-weight:normal;}
+#footer a:hover, #footer a:visited:hover{color:#990000; text-decoration:underline; font-weight:normal;}
+
+#footer ul.contact{
+padding-bottom: 10px;
+}
+
+#footer ul {
+padding: 0px 0px 11px 0px;
+}
+
+#footer li {
+display:inline;
+list-style: none;
+border-left: 1px solid #777777;
+padding: 0px 6px 0px 6px;
+}
+
+#footer li.first {
+border-left: none;
+padding-left: 0px;
+}

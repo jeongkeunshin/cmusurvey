@@ -1,0 +1,126 @@
+div {
+border: 0px solid red;
+}
+div#maincontent {
+padding: 2em 0 0 0;
+}
+div.content {
+text-align:center;
+padding: 0 0 0 0;
+}
+div.leftcontent {
+text-align:left;
+float:left;
+padding: 0 0 0 0;
+}
+div.rightcontent {
+text-align:right;
+float:right;
+padding: 0 0 0 0;
+}
+div.library {
+float:left;
+}
+div#bar.library {
+float: left;
+width: 2px;
+background:#990000;
+margin-left:1em;
+margin-right:1em;
+margin-top: 75px;
+height: 200px;
+margin-bottom: 75px;
+}
+div#loginForm {
+display: inline-block;
+}
+div#library.content {
+float: left;
+}
+fieldset {
+display:inline-block;
+border: none;
+padding: 0 0 0 0;
+}
+fieldset label {  
+float: left;  
+width: 8em;  
+margin: .25em 1em 0 1em;
+text-align: right;  
+font-weight: bold;
+}  
+fieldset div {
+padding: 0em 1em 1em 1em;
+}
+fieldset div#mobile-lockwrapper {
+display: none;
+}
+fieldset div#formclear {
+}
+fieldset div.legend {
+float:left;
+width: 10em;
+text-align: right;
+padding: 0 1em 0 2em;
+}
+fieldset div#formandlock {
+clear: both;
+padding: 0 0 0 0;
+overflow: hidden;
+position: relative;
+margin: 0 auto 0 auto;
+}
+fieldset div#formwrapper {
+float:left;
+}
+fieldset div#failed {  
+text-align: left;
+color: #990000;
+padding-left: 11em;  
+}  
+fieldset div#expired {  
+padding: 0 0 3em 5em;
+text-align: left;
+width: 20em;
+}  
+fieldset div#lockwrapper {
+float:left;
+}
+#lock {
+width: 55px;
+height: 75px;
+padding: 20px 0 0 0;
+}
+#lock a {
+display:block;
+width:100%;
+height:100%;
+background-image:url(/img/lock.jpg);
+background-repeat:no-repeat;
+background-position:left center;
+text-indent: -9999px;
+}
+div.clear {
+clear:both;
+padding: 0 0 0 0;
+}
+#warning, #changing, #forgotpassword, #about, #mobile-about {
+clear: both;
+text-align: center;
+padding: 1em 0 0 0;
+font-size:12px;
+}
+td.dataHeader {
+font-weight: bold;
+}
+tr.evenrow {
+background-color: #c0c0c0;
+}
+div.errortext {
+padding: 1em 1em 1em 1em;
+}
+div#mainbody {
+max-width: 500px;
+margin: 0 auto 0 auto;
+text-align: left;
+}

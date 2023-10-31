@@ -1,0 +1,9 @@
+fieldset {
+   display:inline;
+}
+fieldset div#formclear {
+   *display: inline;
+}
+fieldset div#formandlock {
+   *display: inline;
+}

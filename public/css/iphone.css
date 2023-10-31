@@ -1,0 +1,85 @@
+body { 
+   -webkit-text-size-adjust: none;   
+}
+div {
+   border: 0px solid red;
+}
+div.content {
+   padding: 2px 2px 1em 2px;
+}
+div.library {
+float:left;
+border-style:solid;
+border-right-width:0px;
+border-bottom-width:2px;
+border-color:#990000;
+padding-right:0em;
+}
+div#bar.library {
+display: none;
+}
+fieldset {
+   padding: 0 0 0 0;
+}
+fieldset label {
+   width: auto;
+   margin-left: 0;
+   margin-right: .5em;
+}
+fieldset div {
+   padding: 0 0 0 0;
+}
+fieldset div.legend {
+   padding: 0 0 0 0;
+   width: auto;
+}
+fieldset div.formrow {
+  padding-top: 0.5em;
+}
+fieldset div#failed {
+   padding: 0 0 0 0;
+   text-align: center;
+}
+fieldset div#expired {
+   padding: 0 0 0 0;
+   width: auto;
+}
+fieldset div#formwrapper {
+   padding: 0 0 0 0;
+   margin-right: 0;
+}
+fieldset div#form { 
+   clear: both;
+}
+fieldset div#lockwrapper {
+   display: none;
+}
+fieldset div#mobile-lockwrapper {
+   display: block;
+   z-index: 1;
+   float: right;
+}
+#mobile-lock {
+   width: 27px;
+   height: 38px;
+   padding: 0 0 0 5px;
+}
+#mobile-lock a {
+   display:block;
+   width:100%;
+   height:100%;
+   background-image:url(/img/lock-small.jpg);
+   background-repeat:no-repeat;
+   background-position:left center;
+   text-indent: -9999px;
+}
+div.clear {
+   clear:none;
+}
+h1 {
+   margin: 0 0 0 0; 
+   padding: 0 0 0 0;
+}
+br {
+   display: none;
+}
